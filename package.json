@@ -1,0 +1,37 @@
+{
+  "name": "xamen",
+  "version": "0.0.0",
+  "preferGlobal": true,
+  "description": "Minimal CI tool for node.js apps",
+  "main": "./lib/xamen.js",
+  "bin": "./bin/xamen-cli.js",
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jabclab/xamen.git"
+  },
+  "keywords": [
+    "ci",
+    "test",
+    "automate",
+    "minimal"
+  ],
+  "author": "Jake Clarkson <jake@digitalanimal.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jabclab/xamen/issues"
+  },
+  "engines": {
+    "node": ">= 0.11.12"
+  },
+  "devDependencies": {
+    "sinon-chai": "^2.5.0",
+    "chai": "^1.9.1",
+    "sinon": "^1.9.1",
+    "supertest": "^0.10.0",
+    "mocha": "^1.18.2"
+  }
+}
